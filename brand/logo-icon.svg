@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Luca Cozzi">
+  <rect width="64" height="64" rx="15" fill="#6c49f2"/>
+  <g transform="translate(32 32) scale(1.1) translate(-32 -32)">
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 24v6"/>
+      <path d="M13.5 30h37"/>
+      <path d="M13.5 30v10M32 30v10M50.5 30v10"/>
+    </g>
+    <rect x="25.5" y="15" width="13" height="9" rx="4.5" fill="#fff"/>
+    <rect x="7" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+    <rect x="25.5" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+    <rect x="44" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca Cozzi — Sviluppo web e automazioni</title>
+  <meta name="description" content="Luca Cozzi, tecnico informatico a Brescia. Sviluppo applicazioni PHP/Laravel, gestisco database e costruisco automazioni n8n per PMI.">
+  <meta name="theme-color" content="#07080f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%236c49f2'/%3E%3Cg transform='translate(32 32) scale(1.1) translate(-32 -32)'%3E%3Cg fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 24v6'/%3E%3Cpath d='M13.5 30h37'/%3E%3Cpath d='M13.5 30v10M32 30v10M50.5 30v10'/%3E%3C/g%3E%3Crect x='25.5' y='15' width='13' height='9' rx='4.5' fill='%23fff'/%3E%3Crect x='7' y='40' width='13' height='9' rx='4.5' fill='%23fff'/%3E%3Crect x='25.5' y='40' width='13' height='9' rx='4.5' fill='%23fff'/%3E%3Crect x='44' y='40' width='13' height='9' rx='4.5' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Luca Cozzi, torna all'inizio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false">
+            <rect width="64" height="64" rx="15" fill="#6c49f2"/>
+            <g transform="translate(32 32) scale(1.1) translate(-32 -32)">
+              <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M32 24v6"/>
+                <path d="M13.5 30h37"/>
+                <path d="M13.5 30v10M32 30v10M50.5 30v10"/>
+              </g>
+              <rect x="25.5" y="15" width="13" height="9" rx="4.5" fill="#fff"/>
+              <rect x="7" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+              <rect x="25.5" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+              <rect x="44" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Luca Cozzi</strong>
+          <small>Sviluppo &amp; automazioni</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Navigazione principale">
+        <a href="#profilo">Profilo</a>
+        <a href="#competenze">Competenze</a>
+        <a href="#progetti">Progetti</a>
+        <a href="#esperienza">Esperienza</a>
+        <a class="nav-cta" href="#contatti">Scrivimi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Luca Cozzi.<br><span class="accent">Web app</span> e<br>automazioni per PMI.</h1>
+          <p class="lead">
+            Tecnico informatico a Brescia. Sviluppo applicazioni PHP/Laravel e Django,
+            gestisco database e automatizzo processi con n8n.
+            Studio, misuro, verifico.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#progetti">Guarda i progetti</a>
+            <a class="btn btn-ghost" href="CV-Luca-Cozzi.pdf" download>Scarica il CV</a>
+          </div>
+          <ul class="hero-tags" aria-label="Tecnologie principali">
+            <li class="status-chip"><span class="status-dot"></span> Aperto a progetti</li>
+            <li>PHP / Laravel</li>
+            <li>Python / Django</li>
+            <li>n8n</li>
+            <li>MariaDB</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glow"></div>
+
+          <div class="code-card">
+            <div class="code-top">
+              <span class="code-dots"><i></i><i></i><i></i></span>
+              <span class="code-file">luca@dev — zsh</span>
+            </div>
+            <pre><code><span class="c-muted">luca@dev:~$</span> php artisan about
+<span class="c-key">Environment</span> ..... local
+<span class="c-key">PHP</span> ............. <span class="c-val">8.2</span>
+<span class="c-key">Database</span> ........ MariaDB
+<span class="c-key">Deploy</span> .......... Plesk
+
+<span class="c-muted">luca@dev:~$</span> n8n start
+<span class="c-ok">✓</span> workflow  lead-to-crm
+<span class="c-ok">✓</span> webhook   /nuovo-lead
+<span class="c-ok">✓</span> notifica  sales@
+<span class="c-cursor">▌</span></code></pre>
+          </div>
+
+          <div class="float-card float-a">
+            <span class="float-icon">↗</span>
+            <div>
+              <strong>Deploy</strong>
+              <small>Plesk · completato</small>
+            </div>
+            <span class="float-check">ok</span>
+          </div>
+
+          <div class="float-card float-b">
+            <div>
+              <strong>Life Hub</strong>
+              <small>166 test automatici</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence">
+      <div class="wrap">
+        <div class="evidence-head">
+          <div>
+            <h2>Numeri piccoli. <span class="accent-dark">Reali.</span></h2>
+          </div>
+          <p class="evidence-note">
+            Preferisco mostrarli che gonfiarli. Ogni progetto qui sotto
+            è stato costruito, consegnato o è in sviluppo adesso.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>4</strong>
+            <span>anni di esperienza aziendale</span>
+          </div>
+          <div class="stat">
+            <strong>1</strong>
+            <span>sito web consegnato</span>
+          </div>
+          <div class="stat">
+            <strong>4</strong>
+            <span>progetti tra web, dati e automazioni</span>
+          </div>
+          <div class="stat">
+            <strong>2027</strong>
+            <span>fine prevista del percorso IFTS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="profilo">
+      <div class="wrap split">
+        <div class="split-title">
+          <h2>Curioso per mestiere. <span class="accent-dark">Concreto</span> per metodo.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Ho iniziato con l'informatica a scuola e non ho più smesso.
+            Oggi alterno i periodi in aula dell'IFTS a quelli in azienda da OlaMedia,
+            dove lavoro su applicazioni PHP/Laravel, database MariaDB e deploy su Plesk.
+          </p>
+          <p>
+            Fuori dall'orario di lavoro costruisco i miei progetti: un'app Django per
+            gestire spese e task, un secondo cervello su Obsidian, workflow n8n per
+            automatizzare processi ripetitivi. Uso l'AI come assistente di sviluppo,
+            ma il codice lo eseguo e lo verifico.
+          </p>
+          <p>
+            Non prometto di sapere tutto. Prometto di capire il problema,
+            scegliere lo strumento più semplice e consegnare qualcosa che funziona.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="competenze">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Tre cose che so fare <span class="accent-dark">bene.</span></h2>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-head">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                  <path d="M3 9h18M7 6.5h.01M10 6.5h.01"></path>
+                  <path d="M7 13h4M7 16h7"></path>
+                </svg>
+              </span>
+              <h3>Web app</h3>
+            </div>
+            <p>PHP/Laravel, Django, HTML, CSS e JavaScript. Dal modello dati all'interfaccia, fino al deploy.</p>
+            <ul class="card-tags"><li>Laravel</li><li>Django</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="2.5"></circle>
+                  <circle cx="18" cy="6" r="2.5"></circle>
+                  <circle cx="12" cy="18" r="2.5"></circle>
+                  <path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"></path>
+                </svg>
+              </span>
+              <h3>Automazioni</h3>
+            </div>
+            <p>Workflow n8n, API e webhook per risposte ai lead, bozze di preventivo e gestione documenti.</p>
+            <ul class="card-tags"><li>n8n</li><li>API</li><li>AI</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5.5" rx="7" ry="3"></ellipse>
+                  <path d="M5 5.5v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
+                  <path d="M5 11.5v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
+                </svg>
+              </span>
+              <h3>Database &amp; deploy</h3>
+            </div>
+            <p>MariaDB, SQL, Docker e Plesk. La parte meno visibile, quella che tiene su tutto il resto.</p>
+            <ul class="card-tags"><li>MariaDB</li><li>Docker</li><li>Plesk</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="progetti">
+      <div class="wrap">
+        <div class="section-head section-head-row">
+          <div>
+            <h2>Cose costruite, <span class="accent-dark">non slide.</span></h2>
+          </div>
+          <a class="text-link" href="https://github.com/cozzils" target="_blank" rel="noopener noreferrer">
+            Vedi GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="projects">
+          <article class="project project-featured reveal">
+            <div class="project-top">
+              <span class="project-num">01</span>
+              <span class="badge">Consegnato</span>
+            </div>
+            <h3>Valhalla</h3>
+            <p>Sito web realizzato e venduto come prestazione occasionale. Struttura, responsive e messa online: un progetto piccolo, fatto bene.</p>
+            <ul class="project-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Cliente</li></ul>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <span class="badge badge-soft">In sviluppo</span>
+            </div>
+            <h3>Automazioni n8n</h3>
+            <p>Prototipi di workflow per PMI: risposta ai lead, bozze di preventivo e smistamento documenti. Demo in arrivo.</p>
+            <ul class="project-tags"><li>n8n</li><li>API</li><li>AI</li></ul>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <span class="project-num">03</span>
+              <span class="badge badge-soft">Live</span>
+            </div>
+            <h3>Life Hub</h3>
+            <p>App Django per spese, task, note e calendario. Deploy su Render, database Neon e 166 test automatici.</p>
+            <ul class="project-tags"><li>Django</li><li>PostgreSQL</li><li>Render</li></ul>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="project project-dark reveal">
+            <div class="project-top">
+              <span class="project-num">04</span>
+              <span class="badge badge-soft">Personale</span>
+            </div>
+            <h3>Second brain</h3>
+            <p>Vault Obsidian organizzato con il metodo PARA e gestito con agenti AI. Progetti, studio e contesto in un unico posto.</p>
+            <ul class="project-tags"><li>Obsidian</li><li>AI</li><li>Automazione</li></ul>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="esperienza">
+      <div class="wrap split split-wide">
+        <div>
+          <h2>Dove ho imparato <span class="accent-dark">facendo.</span></h2>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-head">
+                <h3>OlaMedia</h3>
+                <span>Oggi</span>
+              </div>
+              <p class="timeline-role">Apprendista sviluppatore</p>
+              <p>PHP/Laravel, MariaDB, deploy su Plesk e manutenzione di applicazioni legacy.</p>
+            </li>
+            <li class="reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-head">
+                <h3>IFTS</h3>
+                <span>2026 — 2027</span>
+              </div>
+              <p class="timeline-role">Programmazione database e AI</p>
+              <p>Percorso in alternanza scuola/azienda. Fine prevista: maggio 2027.</p>
+            </li>
+            <li class="reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-head">
+                <h3>Dacuna Studio</h3>
+                <span>2 anni</span>
+              </div>
+              <p class="timeline-role">Stage formativo</p>
+              <p>Marketing, comunicazione, rapporto con i clienti e lavoro in contesto aziendale.</p>
+            </li>
+            <li class="reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-head">
+                <h3>CFP Zanardelli</h3>
+                <span>Brescia</span>
+              </div>
+              <p class="timeline-role">Diploma di tecnico informatico</p>
+              <p>Percorso quadriennale in informatica e sviluppo software.</p>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="method">
+          <h3>Come lavoro</h3>
+          <ol>
+            <li>
+              <span>01</span>
+              <div><strong>Capisco</strong><p>Prima di scrivere codice, metto a fuoco il problema e i vincoli.</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong>Costruisco</strong><p>Soluzioni semplici, con lo stack giusto e niente dipendenze inutili.</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong>Verifico</strong><p>Eseguo, testo, documento. Se non funziona, non è finito.</p></div>
+            </li>
+          </ol>
+          <p class="method-note">L'AI è un moltiplicatore, non una scorciatoia.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stack" aria-label="Stack tecnologico">
+      <div class="wrap stack-head">
+        <p class="eyebrow">Stack</p>
+        <p class="stack-note">Gli strumenti che uso ogni giorno.</p>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <ul class="marquee-group">
+            <li>PHP</li><li>Laravel</li><li>Python</li><li>Django</li>
+            <li>JavaScript</li><li>MariaDB</li><li>Docker</li><li>Git</li>
+            <li>Plesk</li><li>n8n</li>
+          </ul>
+          <ul class="marquee-group" aria-hidden="true">
+            <li>PHP</li><li>Laravel</li><li>Python</li><li>Django</li>
+            <li>JavaScript</li><li>MariaDB</li><li>Docker</li><li>Git</li>
+            <li>Plesk</li><li>n8n</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contatti">
+      <div class="wrap">
+        <div class="contact-panel reveal">
+          <h2>Hai un processo che<br><span>ti ruba tempo?</span></h2>
+          <p>Scrivimi. Se posso automatizzarlo o costruirlo, te lo dico. Se non posso, te lo dico lo stesso.</p>
+          <div class="actions">
+            <a class="btn btn-light" href="mailto:cozziluca1@gmail.com">Scrivimi una mail</a>
+            <button class="btn btn-outline-light" type="button" id="copy-email">Copia email</button>
+          </div>
+          <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false">
+            <rect width="64" height="64" rx="15" fill="#6c49f2"/>
+            <g transform="translate(32 32) scale(1.1) translate(-32 -32)">
+              <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M32 24v6"/>
+                <path d="M13.5 30h37"/>
+                <path d="M13.5 30v10M32 30v10M50.5 30v10"/>
+              </g>
+              <rect x="25.5" y="15" width="13" height="9" rx="4.5" fill="#fff"/>
+              <rect x="7" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+              <rect x="25.5" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+              <rect x="44" y="40" width="13" height="9" rx="4.5" fill="#fff"/>
+            </g>
+          </svg>
+        </span>
+        <p>Luca Cozzi<br><small>Brescia, Italia</small></p>
+      </div>
+      <nav aria-label="Link footer">
+        <a href="https://github.com/cozzils" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:cozziluca1@gmail.com">Email</a>
+        <a href="CV-Luca-Cozzi.pdf" download>CV</a>
+        <a href="#top">Torna su ↑</a>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> Luca Cozzi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
